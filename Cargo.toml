@@ -1,0 +1,17 @@
+[package]
+name = "pprof-object-store"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-trait = "0.1"
+bytes = "1.0"
+futures = "0.3"
+object_store = { version = "0.11.0" }
+pprof = { path = "../pprof-rs", features = ["protobuf-codec"]}
+
+# ideally we could remove these dependencies once we get the right
+# interface integrated into pprof-rs
+backtrace = { version = "0.3" }
+parking_lot = "0.12"
+smallvec = "1.7"

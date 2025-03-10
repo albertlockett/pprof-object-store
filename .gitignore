@@ -1,0 +1,5 @@
+
+# my test files
+src/bin/test*
+
+/target
